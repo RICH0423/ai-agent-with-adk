@@ -105,7 +105,9 @@ uvicorn main:app --host 0.0.0.0 --port 8080
 ### 使用Tools串接外部API (news_assistant_agent2)
 
 1. 註冊News API並取得API Key
-2. 設定API Key
+https://newsapi.org/
+
+3. 設定API Key
 ```
 export NEWS_API_KEY=$NEWS_API_KEY
 ```
