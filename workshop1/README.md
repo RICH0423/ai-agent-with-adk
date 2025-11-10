@@ -40,7 +40,7 @@ root_agent = Agent(
 )
 ```
 
-### 2. 工具函數
+### 2. 工具函數 - news_assistant_agent
 
 工具函數讓Agent能夠執行特定任務：
 
@@ -84,7 +84,12 @@ cd workshop1
 pip install -r requirements.txt
 ```
 
-2. 啟動服務：
+2. 設定API Key
+```
+export GOOGLE_API_KEY=$GOOGLE_API_KEY
+```
+
+3. 啟動服務：
 ```bash
 python main.py
 ```
@@ -93,7 +98,17 @@ python main.py
 uvicorn main:app --host 0.0.0.0 --port 8080
 ```
 
-3. 打開瀏覽器訪問 `http://localhost:8080` 來使用Web界面
+4. 打開瀏覽器訪問 `http://localhost:8000` 來使用Web界面
+
+---
+
+### 使用Tools串接外部API (news_assistant_agent2)
+
+1. 註冊News API並取得API Key
+2. 設定API Key
+```
+export NEWS_API_KEY=$NEWS_API_KEY
+```
 
 ### 使用Agent
 
